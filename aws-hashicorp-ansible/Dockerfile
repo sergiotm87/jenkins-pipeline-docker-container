@@ -1,4 +1,4 @@
-FROM python:3.7.5-alpine3.10
+FROM python:3.8.1-alpine3.10
 COPY --from=hashicorp/terraform:0.12.10 /bin/terraform /bin/terraform
 COPY --from=hashicorp/packer:1.4.1 /bin/packer /bin/packer
 
