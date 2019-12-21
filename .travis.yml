@@ -1,0 +1,20 @@
+sudo: required
+
+language: bash
+
+branches:
+  only:
+  - ci
+
+services:
+  - docker
+
+script:
+  - make up
+
+notifications:
+  email:
+    recipients:
+      - sergiotm87@gmail.com
+    on_success: always
+    on_failure: always
