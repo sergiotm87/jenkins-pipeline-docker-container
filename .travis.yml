@@ -1,6 +1,6 @@
-sudo: required
+language: shell
 
-language: bash
+os: linux
 
 branches:
   only:
