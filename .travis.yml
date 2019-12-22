@@ -17,5 +17,4 @@ notifications:
   email:
     recipients:
       - sergiotm87@gmail.com
-    on_success: always
     on_failure: always
