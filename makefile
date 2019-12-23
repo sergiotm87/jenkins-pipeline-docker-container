@@ -17,6 +17,5 @@ help:           ## Show this help
 build:          ## Build docker image
 	docker build -t ${DOCKER_IMAGE} aws-hashicorp-ansible/
 
-up:             ## Build and push docker image
-	build
-	docker push ${DOCKER_IMAGE}
+up: build       ## Build and push docker image
+    docker push ${DOCKER_IMAGE}
