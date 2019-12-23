@@ -3,7 +3,7 @@ pull_request_rules:
     conditions:
       - base=ci
       - author=renovate[bot]
-      - status-success=Travis CI - Pull Request
+      - status-success=continuous-integration/travis-ci/pr
     actions:
       merge:
         method: merge
