@@ -1,6 +1,6 @@
 FROM python:3.8.3-alpine3.10
 COPY --from=hashicorp/terraform:0.14.6 /bin/terraform /bin/terraform
-COPY --from=hashicorp/packer:1.6.6 /bin/packer /bin/packer
+COPY --from=hashicorp/packer:1.7.2 /bin/packer /bin/packer
 
 RUN apk add --update git bash wget groff less jq perl openssh make ca-certificates curl \
     #ansible reqs.
