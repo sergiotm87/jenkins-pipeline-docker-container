@@ -1,5 +1,5 @@
 FROM python:3.8.3-alpine3.10
-COPY --from=hashicorp/terraform:1.5.2 /bin/terraform /bin/terraform
+COPY --from=hashicorp/terraform:1.5.3 /bin/terraform /bin/terraform
 COPY --from=hashicorp/packer:1.9.1 /bin/packer /bin/packer
 
 RUN apk add --update git bash wget groff less jq perl openssh make ca-certificates curl \
